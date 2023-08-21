@@ -25,13 +25,11 @@ jobs:
       - name: Print
         run: |
           ls -a
-          cat test.txt
-
       - name: Download
         uses: dawidd6/action-download-artifact@v2
         with:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
-          name: test-artifact
+          name: test-artifact2
           workflow: blank.yml  
       - name: Print
         run: |
