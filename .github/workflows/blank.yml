@@ -26,3 +26,8 @@ jobs:
         run: |
           test="test"
           echo $test > test.txt
+      - name: Archive results
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-artifact
+          path: test.txt
