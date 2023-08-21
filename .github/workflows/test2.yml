@@ -29,4 +29,8 @@ jobs:
         with:
           github_token: "${{ secrets.GITHUB_TOKEN }}"
           name: test-artifact
-          workflow: blank.yml         
+          workflow: blank.yml  
+      - name: Print
+        run: |
+          ls -a
+          cat test.txt
